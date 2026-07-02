@@ -124,3 +124,19 @@ docker run -p 8000:8000 churn-api
 
 Python · SQLite · Pandas · Seaborn · SciPy · XGBoost · scikit-learn ·
 PyTorch · MLflow · FastAPI · Docker · sentence-transformers · GPT-2
+
+
+## Live API Demo
+
+The trained XGBoost model is served behind a FastAPI endpoint with 
+auto-generated Swagger UI. Sample prediction response:
+
+```json
+{
+  "churn_probability": 0.4093,
+  "churn_prediction": 0,
+  "risk_tier": "medium"
+}
+```
+
+![Swagger UI live prediction](swagger_demo.png)
